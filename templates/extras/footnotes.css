@@ -1,0 +1,44 @@
+/* Style for footnote references  */
+#maincontent a.footnote-ref, 
+a.footnote-ref {
+    text-decoration: none; 
+    background-color: var(--primary-color); 
+    color: var(--page-background); 
+    padding: 2px 4px; 
+    border-radius: 2px; 
+    font-size: 0.75em; 
+}
+
+/* Ensure superscript positioning is maintained */
+sup[id^="fnref"] {
+    vertical-align: super;
+    font-size: smaller;
+}
+
+.footnote ol {
+    counter-reset: footnote-item; /* Resets and initializes the counter */
+    list-style: none;
+    padding: 0;
+}
+
+.footnote ol li {
+    display: block;
+    margin-bottom: 10px;
+    position: relative; /* For positioning the number */
+}
+
+.footnote ol li::before {
+    content: counter(footnote-item) ".";
+    counter-increment: footnote-item;
+    position: absolute; /* Position the number absolutely within the li */
+    left: -30px; /* Adjust as needed to align with your content */
+    top: 0;
+    font-weight: bold;
+}
+
+.footnote ol li p {
+    margin-top: 0; /* Remove the top margin to align with the number */
+    padding-left: 20px; /* Adjust padding to ensure text does not overlap the number */
+}
+
+

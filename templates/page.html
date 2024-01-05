@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}{{ page_title }} - {{ config['site_name'] }}{% endblock %}
+
+{% block content %}
+    {% if hero_image %}
+    <div class="hero" style="background-image: url('{{ hero_image }}');">
+        <h1 class="hero-title">{{ page_title }}</h1>
+    </div>
+    {% endif %}
+    <div id="maincontent">
+        {% if not hero_image %}
+        <h1>{{ page_title }}</h1>
+        {% endif %}
+        <div>{{ page_content | safe }}</div>
+        <!-- Additional page-specific content -->
+    </div>
+{% endblock %}

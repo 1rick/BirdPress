@@ -1,0 +1,20 @@
+---
+
+title: Now
+hero_image: "../static/images/header.jpg"
+slug: about
+
+---
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam phasellus vestibulum lorem sed. Lectus arcu bibendum at varius vel pharetra vel. Morbi quis commodo odio aenean sed adipiscing diam donec adipiscing. Eu volutpat odio facilisis mauris sit amet massa vitae tortor. Tristique senectus et netus et malesuada fames ac turpis. Quis blandit turpis cursus in hac. Magna fermentum iaculis eu non diam. Elit sed vulputate mi sit amet mauris commodo quis imperdiet. Sit amet aliquam id diam maecenas ultricies mi. Risus feugiat in ante metus. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Odio aenean sed adipiscing diam donec. Pharetra convallis posuere morbi leo urna molestie at. Morbi quis commodo odio aenean. Faucibus a pellentesque sit amet porttitor eget dolor morbi non. In vitae turpis massa sed elementum tempus egestas sed sed. Risus sed vulputate odio ut enim. Nunc scelerisque viverra mauris in aliquam sem fringilla ut.
+
+![mejiro](../static/images/mejiro-wide.jpg)
+
+
+Auctor urna nunc id cursus metus. Nibh cras pulvinar mattis nunc sed blandit libero volutpat sed. Netus et malesuada fames ac turpis egestas maecenas pharetra. Amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar. Arcu cursus euismod quis viverra nibh. Erat nam at lectus urna duis convallis convallis tellus. Quis blandit turpis cursus in hac habitasse platea dictumst. Imperdiet massa tincidunt nunc pulvinar sapien et ligula. Dapibus ultrices in iaculis nunc sed augue. Et netus et malesuada fames ac turpis egestas maecenas pharetra. Malesuada bibendum arcu vitae elementum curabitur vitae.
+
+Est sit amet facilisis magna etiam. Mus mauris vitae ultricies leo integer malesuada. Molestie at elementum eu facilisis sed odio morbi quis. Vel pharetra vel turpis nunc eget lorem dolor sed. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Ornare massa eget egestas purus viverra. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet. Scelerisque viverra mauris in aliquam. Tellus in hac habitasse platea dictumst vestibulum rhoncus. Ultricies tristique nulla aliquet enim tortor at. Lectus quam id leo in vitae turpis massa sed elementum. Sagittis nisl rhoncus mattis rhoncus urna neque viverra. Varius duis at consectetur lorem.
+
+Euismod elementum nisi quis eleifend quam adipiscing. Nunc consequat interdum varius sit amet mattis vulputate enim. Iaculis eu non diam phasellus vestibulum lorem sed risus. Aliquet nibh praesent tristique magna sit amet. Dictum non consectetur a erat. Id porta nibh venenatis cras. Magnis dis parturient montes nascetur ridiculus. Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus. Elementum nisi quis eleifend quam. Phasellus faucibus scelerisque eleifend donec pretium. Ut tortor pretium viverra suspendisse. Est lorem ipsum dolor sit. Interdum posuere lorem ipsum dolor sit amet consectetur adipiscing elit.
+
+Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus. Quam quisque id diam vel quam elementum pulvinar. Diam vel quam elementum pulvinar etiam non quam lacus suspendisse. Risus nec feugiat in fermentum posuere urna nec. Vitae congue mauris rhoncus aenean vel elit scelerisque. Eget sit amet tellus cras adipiscing enim eu turpis egestas. Eros donec ac odio tempor orci dapibus ultrices in. Augue ut lectus arcu bibendum at varius. Adipiscing tristique risus nec feugiat in fermentum. Donec ultrices tincidunt arcu non sodales neque sodales ut etiam. Scelerisque felis imperdiet proin fermentum. Elementum integer enim neque volutpat ac tincidunt vitae semper quis. Aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis. Tortor aliquam nulla facilisi cras fermentum. Nunc sed augue lacus viverra vitae congue eu consequat ac. Tristique senectus et netus et malesuada fames ac turpis. Enim nec dui nunc mattis enim ut.

@@ -1,0 +1,16 @@
+<header>
+    <a href="{{ config['base_url'] }}"><img class="logo" src="/static/images/{{ config['logo_filename'] }}" alt="logo"></a>
+    <!-- other header elements -->
+    <input id="toggler" class="toggler" type="checkbox">
+        <label for="toggler" class="burger">
+            <span>☰</span>
+        </label>
+    <nav>
+        <ul>
+            {% for item in config['navigation'] %}
+                <li><a href="{{ item['link'] }}">{{ item['label'] }}</a></li>
+            {% endfor %}
+        </ul>
+    </nav>
+
+</header>

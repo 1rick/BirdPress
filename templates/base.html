@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ config['site_language'] }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if noindex %}
+    <meta name="robots" content="noindex{% if nofollow %}, nofollow{% endif %}">
+    {% elif nofollow %}
+    <meta name="robots" content="nofollow">
+    {% endif %}
+    <title>{% block title %}{{ config['site_name'] }}{% endblock %}</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="icon" href="/static/images/{{ config['favicon_32x32_filename'] }}" type="image/png">
+    <!-- RSS Feed link -->
+    <link rel="alternate" type="application/rss+xml" title="{{ config['site_name'] }} RSS Feed" href="{{ config['base_url'] }}/rss.xml">
+</head>
+</head>
+<body>
+    {% include 'header.html' %}
+    
+    {% block content %}{% endblock %}
+    {% include 'footer.html' %}
+    
+</body>
+</html>

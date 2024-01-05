@@ -1,0 +1,23 @@
+pre {
+    background-color: var(--code-background); /* Dark grey background for code blocks */
+    color: var(--page-background); /* Light color for text in code blocks */
+    border: 1px solid var(--primary-color); /* Border color from primary color */
+    overflow-x: auto;
+    padding: 1em;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+code {
+    background-color: var(--code-background); /* Consistent background for inline code */
+    color: var(--page-background); /* Light color for text in inline code */
+    padding: 2px 4px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9em;
+}
+
+pre code {
+    background: none; /* No additional background for code inside pre */
+    padding: 0;
+}

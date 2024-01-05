@@ -1,0 +1,30 @@
+.tidyTable.small,
+.tidyTable.small thead th,
+.tidyTable.small tbody td {
+  font-size: 0.8em; /* Smaller font size */
+  padding: 10px; /* Reduced padding */
+}
+
+/* Regular styles for .tidyTable */
+.tidyTable {
+  width: 100%; /* Full width */
+  border-collapse: collapse; 
+  margin: 20px 0; 
+}
+
+.tidyTable thead th {
+  font-weight: bold; /* Bold font for header */
+  border-bottom: 2px solid var(--primary-color); /* Thicc bottom border */
+  padding: 15px;
+  text-align: left;
+}
+
+.tidyTable tbody td {
+  padding: 30px; 
+  border-bottom: 1px solid var(--secondary-color); /* Light bottom border for each cell */
+  text-align: left; 
+}
+
+.tidyTable tbody tr:last-child td {
+  border-bottom: none; /* Remove bottom border for the last row */
+}

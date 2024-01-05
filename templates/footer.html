@@ -1,0 +1,7 @@
+<footer>
+    <ul>
+        {% for link in config['footer_links'] %}
+            <li><a href="{{ link['link'] }}">{{ link['label'] }}</a></li>
+        {% endfor %}
+    </ul>
+</footer>

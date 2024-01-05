@@ -1,0 +1,49 @@
+{
+    "site_name": "Birdpress: A Simple Website and Blog Made Simply in Python",
+    "site_description": "Because who needs wordpress for small websites like this.",
+    "theme_stylesheet": "RedCrane.css",
+    "base_url": "http://localhost:8000",
+    "logo_filename": "logo.svg",
+    "favicon_32x32_filename": "favicon.png",
+    "font_url": "https://fonts.googleapis.com/css?family=Roboto:300,400,500",
+    "font_family": "'Roboto', sans-serif",
+    "navigation": [
+        {
+            "label": "About",
+            "link": "/about.html"
+        },
+        {
+            "label": "Blog",
+            "link": "/posts.html"
+        },
+        {
+            "label": "Projects",
+            "link": "/projects.html"
+        }
+    ],
+    "footer_links": [
+        {
+            "label": "Contact",
+            "link": "/contact.html"
+        },
+        {
+            "label": "RSS",
+            "link": "/rss.html"
+        }
+    ],
+    "footer_text": "All rights reserved. Birdpress 2024.",
+    "enable_tableofcontents": true,
+    "enable_footnotes": true,
+    "enable_fenced_codeblocks": true,
+    "include_headings_css": true,
+    "include_table_css": true,
+    "include_button_css": true,
+    "include_hr_css": true,
+    "include_codeblock_css": true,
+    "include_blockquote_css": true,
+    "include_footnotes_css": true,
+    "include_lists_css": true,
+    "publish_category_feeds": true,
+    "publish_tag_feeds": true,  
+    "site_language": "en"
+}

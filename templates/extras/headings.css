@@ -1,0 +1,31 @@
+#maincontent h1 {
+    color: var(--primary-color);
+    text-wrap: balance;
+    padding-top: 1.8em;
+    padding-bottom: 0.8em;
+    line-height: 1.2;
+}
+
+#maincontent h2 {
+    color: var(--primary-color);
+    text-wrap: balance;
+    padding-top: 1.8em;
+    padding-bottom: 0.8em;
+    line-height: 1.2;
+}
+
+#maincontent h3 {
+    color: var(--secondary-color);
+    text-wrap: balance;
+    padding-top: 1.8em;
+    padding-bottom: 0.8em;
+    line-height: 1.2;
+}
+
+#maincontent h4 {
+    color: #333333;
+    text-wrap: balance;
+    padding-top: 1.8em;
+    padding-bottom: 0.8em;
+    line-height: 1.2;
+}

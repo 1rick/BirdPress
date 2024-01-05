@@ -1,0 +1,557 @@
+/* RedCrane.css */
+
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+:root {
+    --primary-color: #D32F2F; /* Japanese Red */
+    --secondary-color: #757575; /* Grey */
+    --page-background: #FFFFFF; /* White background */
+    --code-background: #333; /* Dark grey for code blocks */
+    --hero-title-color: white;
+    --font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-family), sans-serif;
+    background-color: var(--page-background);
+    font-size: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    background: var(--primary-color);
+    padding: 0.5rem 1rem;
+}
+
+.hero {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    line-height: 1.2;
+    padding: 10vw 2em;
+    text-align: center;
+    color: var(--page-background);
+}
+
+.hero-title {
+    color: var(--hero-title-color);
+    font-size: 2em;
+    text-shadow: 0.1rem 0.1rem 0.8rem black;
+    padding: 1rem 0;
+    text-wrap: balance;
+}
+
+.toggler {
+    display: none;
+}
+
+.logo {
+    display: flex;
+    height: 2rem;
+    margin-left: 1rem;
+    padding-top: 0.1rem;
+}
+
+nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    padding: 3rem;
+    background: var(--primary-color);
+    left: -100%;
+    transition: all 0.3s;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    margin-bottom: 1.2rem;
+    margin-left: 1.2rem;
+}
+
+nav a {
+    color: var(--page-background);
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 4px rgba(31, 31, 31, 0.658);
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+.toggler:checked ~ nav ul {
+    left: 0;
+}
+
+.burger {
+    position: absolute;
+    font-size: 2rem;
+    color: var(--page-background);
+    text-shadow: 2px 2px 4px rgba(31, 31, 31, 0.658);
+    top: 0;
+    right: 0;
+    margin-right: 1rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#maincontent {
+    margin: 0 auto;
+    line-height: 1.5;
+    padding: 4em 1em;
+}
+
+#maincontent > * {
+    max-width: 50rem;
+    margin: auto;
+}
+
+#maincontent img:not(.full-bleed) {
+    max-width: 100%;
+    display: block;
+    margin: 3rem auto;
+}
+
+#maincontent a {
+    color: var(--primary-color);
+}
+
+#maincontent a:hover,
+#maincontent a:focus {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+#maincontent a:visited {
+    /* The darken() function is not a standard CSS function.
+       You might need to manually calculate the darker shade or use a CSS preprocessor */
+    color: darken(var(--primary-color), 10%);
+}
+
+.full-bleed {
+    width: 100vw;
+    max-width: none;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+footer {
+    text-align: center;
+}
+
+footer li {
+    display: inline-block;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-right: 25px;
+}
+
+footer a {
+    color: var(--primary-color);
+}
+
+@media screen and (min-width:800px) {
+    .burger {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        grid-column: 3/4;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav ul {
+        all: unset;
+        list-style: none;
+        display: flex;
+    }
+
+    nav li {
+        margin-bottom: 0;
+        margin-right: 1rem;
+    }
+}
+
+.tidyTable.small,
+.tidyTable.small thead th,
+.tidyTable.small tbody td {
+  font-size: 0.8em; /* Smaller font size */
+  padding: 10px; /* Reduced padding */
+}
+
+/* Regular styles for .tidyTable */
+.tidyTable {
+  width: 100%; /* Full width */
+  border-collapse: collapse; 
+  margin: 20px 0; 
+}
+
+.tidyTable thead th {
+  font-weight: bold; /* Bold font for header */
+  border-bottom: 2px solid var(--primary-color); /* Thicc bottom border */
+  padding: 15px;
+  text-align: left;
+}
+
+.tidyTable tbody td {
+  padding: 30px; 
+  border-bottom: 1px solid var(--secondary-color); /* Light bottom border for each cell */
+  text-align: left; 
+}
+
+.tidyTable tbody tr:last-child td {
+  border-bottom: none; /* Remove bottom border for the last row */
+}
+
+
+#maincontent h1 {
+    color: var(--primary-color);
+    text-wrap: balance;
+    padding-top: 1.8em;
+    padding-bottom: 0.8em;
+    line-height: 1.2;
+}
+
+#maincontent h2 {
+    color: var(--primary-color);
+    text-wrap: balance;
+    padding-top: 1.8em;
+    padding-bottom: 0.8em;
+    line-height: 1.2;
+}
+
+#maincontent h3 {
+    color: var(--secondary-color);
+    text-wrap: balance;
+    padding-top: 1.8em;
+    padding-bottom: 0.8em;
+    line-height: 1.2;
+}
+
+#maincontent h4 {
+    color: #333333;
+    text-wrap: balance;
+    padding-top: 1.8em;
+    padding-bottom: 0.8em;
+    line-height: 1.2;
+}
+
+
+/* General button styling */
+.button {
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+/* Solid buttons */
+.button-primary {
+    background-color: var(--primary-color);
+    text-decoration: none;
+}
+
+.button-primary:hover {
+    background-color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.button-secondary {
+    background-color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.button-secondary:hover {
+    background-color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* Outlined buttons */
+.button-primary-outline {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    background-color: transparent;
+}
+
+.button-primary-outline:hover {
+    background-color: var(--secondary-color);
+    color: var(--page-background); 
+}
+
+.button-secondary-outline {
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    background-color: transparent;
+}
+
+.button-secondary-outline:hover {
+    background-color: var(--primary-color);
+    color: var(--page-background); 
+}
+
+/* Override link color for maincontent container specifically for button links */
+#maincontent a.btn,
+#maincontent a.button-primary,
+#maincontent a.button-secondary {
+    color: var(--page-background);
+    text-decoration: none;
+}
+
+/* Ensure outlined button links within #maincontent maintain their defined text colors */
+#maincontent a.button-primary-outline {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+#maincontent a.button-secondary-outline {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+
+hr {
+    border: 0;
+    height: 5px;
+    max-width: 50%;
+    background-image: linear-gradient(to right, transparent, var(--secondary-color), transparent);
+    margin: 1em auto; /* Centers the line and adds some space around it */
+}
+
+
+pre {
+    background-color: var(--code-background); /* Dark grey background for code blocks */
+    color: var(--page-background); /* Light color for text in code blocks */
+    border: 1px solid var(--primary-color); /* Border color from primary color */
+    overflow-x: auto;
+    padding: 1em;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+code {
+    background-color: var(--code-background); /* Consistent background for inline code */
+    color: var(--page-background); /* Light color for text in inline code */
+    padding: 2px 4px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9em;
+}
+
+pre code {
+    background: none; /* No additional background for code inside pre */
+    padding: 0;
+}
+
+
+/* Unordered list styles specific to #maincontent */
+#maincontent ul {
+    list-style: none; 
+    padding-left: 0; 
+}
+
+#maincontent ul li {
+    position: relative; 
+    padding-left: 1.5em; 
+    margin-bottom: 8px; /* Space between list items */
+}
+
+/* Top level list items */
+#maincontent ul > li::before, #maincontent ul ul > li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.5em; /* Adjusted to better align with the middle of the text */
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+#maincontent ul > li::before {
+    background-color: var(--primary-color); /* Solid color for top level */
+}
+
+#maincontent ul ul > li::before {
+    border: 2px solid var(--primary-color); /* Border style for nested items */
+    background-color: transparent;
+}
+
+/* Correcting positioning for nested list items */
+#maincontent ul ul {
+    padding-left: 1.5em; /* Add padding for nested list items */
+}
+
+/* Ordered list styles specific to #maincontent */
+#maincontent ol {
+    list-style: none; /* Hide default numbers */
+    counter-reset: item; /* Initialize counter for numbering */
+    padding-left: 1em;
+}
+
+#maincontent ol li {
+    counter-increment: item; /* Increment counter */
+    margin-bottom: 10px; /* Space between list items */
+}
+
+/* Top level list items with primary color */
+#maincontent ol li::before {
+    content: counter(item) ". ";
+    color: var(--primary-color);
+    margin-right: 5px;
+}
+
+/* Second level list items with default text color */
+#maincontent ol ol li::before {
+    content: counters(item, ".") " ";
+    color: inherit; /* Default text color */
+}
+
+/* Third level list items with primary color again */
+#maincontent ol ol ol li::before {
+    content: counters(item, ".") " ";
+    color: var(--primary-color);
+}
+
+/* Additional styling for list items as needed */
+#maincontent ol li, #maincontent ol ol li, #maincontent ol ol ol li {
+    position: relative;
+    padding-left: 20px; /* Space for the number */
+}
+
+
+
+/* numbered lists */
+
+ol {
+    list-style: none; /* Hide default numbers */
+    counter-reset: item; /* Initialize counter for numbering */
+    padding-left: 1em;
+}
+
+ol li {
+    counter-increment: item; /* Increment counter */
+    margin-bottom: 10px; /* Space between list items */
+}
+
+/* Top level list items with primary color */
+ol li::before {
+    content: counter(item) ". ";
+    color: var(--primary-color);
+    margin-right: 5px;
+}
+
+/* Second level list items with default text color */
+ol ol li::before {
+    content: counters(item, ".") " ";
+    color: inherit; /* Default text color */
+}
+
+/* Third level list items with primary color again */
+ol ol ol li::before {
+    content: counters(item, ".") " ";
+    color: var(--primary-color);
+}
+
+/* Additional styling for list items as needed */
+ol li, ol ol li, ol ol ol li {
+    position: relative;
+    padding-left: 20px; /* Space for the number */
+}
+
+
+
+/* Style for footnote references  */
+#maincontent a.footnote-ref, 
+a.footnote-ref {
+    text-decoration: none; 
+    background-color: var(--primary-color); 
+    color: var(--page-background); 
+    padding: 2px 4px; 
+    border-radius: 2px; 
+    font-size: 0.75em; 
+}
+
+/* Ensure superscript positioning is maintained */
+sup[id^="fnref"] {
+    vertical-align: super;
+    font-size: smaller;
+}
+
+.footnote ol {
+    counter-reset: footnote-item; /* Resets and initializes the counter */
+    list-style: none;
+    padding: 0;
+}
+
+.footnote ol li {
+    display: block;
+    margin-bottom: 10px;
+    position: relative; /* For positioning the number */
+}
+
+.footnote ol li::before {
+    content: counter(footnote-item) ".";
+    counter-increment: footnote-item;
+    position: absolute; /* Position the number absolutely within the li */
+    left: -30px; /* Adjust as needed to align with your content */
+    top: 0;
+    font-weight: bold;
+}
+
+.footnote ol li p {
+    margin-top: 0; /* Remove the top margin to align with the number */
+    padding-left: 20px; /* Adjust padding to ensure text does not overlap the number */
+}
+
+
+
+
+/* ht to CSS tricks */
+
+blockquote {
+    background: rgba(200, 200, 200, 0.15); /* Faint grey background */
+    border-left: 10px solid var(--primary-color);
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+  }
+  
+  blockquote:before {
+    color: var(--primary-color);
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
+  
+  blockquote p {
+    display: inline;
+  }
+  

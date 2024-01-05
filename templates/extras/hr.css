@@ -1,0 +1,7 @@
+hr {
+    border: 0;
+    height: 5px;
+    max-width: 50%;
+    background-image: linear-gradient(to right, transparent, var(--secondary-color), transparent);
+    margin: 1em auto; /* Centers the line and adds some space around it */
+}

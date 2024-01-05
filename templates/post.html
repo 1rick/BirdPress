@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}{{ title }} - {{ config['site_name'] }}{% endblock %}
+
+{% block content %}
+    {% if hero_image %}
+        <div class="hero" style="background-image: url('{{ hero_image }}');">
+            <h1 class="hero-title">{{ title }}</h1>
+        </div>
+    {% endif %}
+    <div id="maincontent">
+        {% if not hero_image %}
+            <h1>{{ title }}</h1>
+        {% endif %}
+        <div class="post-meta"> 
+            {% if writtenby %}
+            <p><small>Written by: {{ writtenby }}</small></p>
+            {% endif %}
+        </div>
+        <div>{{ content | safe }}</div>
+        <div class="post-info">
+            {{ info_line | safe }}
+        </div>
+        <!-- Additional post-specific content -->
+    </div>
+{% endblock %}

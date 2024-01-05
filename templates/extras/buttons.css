@@ -1,0 +1,72 @@
+/* General button styling */
+.button {
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+/* Solid buttons */
+.button-primary {
+    background-color: var(--primary-color);
+    text-decoration: none;
+}
+
+.button-primary:hover {
+    background-color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.button-secondary {
+    background-color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.button-secondary:hover {
+    background-color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* Outlined buttons */
+.button-primary-outline {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    background-color: transparent;
+}
+
+.button-primary-outline:hover {
+    background-color: var(--secondary-color);
+    color: var(--page-background); 
+}
+
+.button-secondary-outline {
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    background-color: transparent;
+}
+
+.button-secondary-outline:hover {
+    background-color: var(--primary-color);
+    color: var(--page-background); 
+}
+
+/* Override link color for maincontent container specifically for button links */
+#maincontent a.btn,
+#maincontent a.button-primary,
+#maincontent a.button-secondary {
+    color: var(--page-background);
+    text-decoration: none;
+}
+
+/* Ensure outlined button links within #maincontent maintain their defined text colors */
+#maincontent a.button-primary-outline {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+#maincontent a.button-secondary-outline {
+    color: var(--secondary-color);
+    text-decoration: none;
+}

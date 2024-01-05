@@ -1,0 +1,114 @@
+/* Unordered list styles specific to #maincontent */
+#maincontent ul {
+    list-style: none; 
+    padding-left: 0; 
+}
+
+#maincontent ul li {
+    position: relative; 
+    padding-left: 1.5em; 
+    margin-bottom: 8px; /* Space between list items */
+}
+
+/* Top level list items */
+#maincontent ul > li::before, #maincontent ul ul > li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.5em; /* Adjusted to better align with the middle of the text */
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+#maincontent ul > li::before {
+    background-color: var(--primary-color); /* Solid color for top level */
+}
+
+#maincontent ul ul > li::before {
+    border: 2px solid var(--primary-color); /* Border style for nested items */
+    background-color: transparent;
+}
+
+/* Correcting positioning for nested list items */
+#maincontent ul ul {
+    padding-left: 1.5em; /* Add padding for nested list items */
+}
+
+/* Ordered list styles specific to #maincontent */
+#maincontent ol {
+    list-style: none; /* Hide default numbers */
+    counter-reset: item; /* Initialize counter for numbering */
+    padding-left: 1em;
+}
+
+#maincontent ol li {
+    counter-increment: item; /* Increment counter */
+    margin-bottom: 10px; /* Space between list items */
+}
+
+/* Top level list items with primary color */
+#maincontent ol li::before {
+    content: counter(item) ". ";
+    color: var(--primary-color);
+    margin-right: 5px;
+}
+
+/* Second level list items with default text color */
+#maincontent ol ol li::before {
+    content: counters(item, ".") " ";
+    color: inherit; /* Default text color */
+}
+
+/* Third level list items with primary color again */
+#maincontent ol ol ol li::before {
+    content: counters(item, ".") " ";
+    color: var(--primary-color);
+}
+
+/* Additional styling for list items as needed */
+#maincontent ol li, #maincontent ol ol li, #maincontent ol ol ol li {
+    position: relative;
+    padding-left: 20px; /* Space for the number */
+}
+
+
+
+/* numbered lists */
+
+ol {
+    list-style: none; /* Hide default numbers */
+    counter-reset: item; /* Initialize counter for numbering */
+    padding-left: 1em;
+}
+
+ol li {
+    counter-increment: item; /* Increment counter */
+    margin-bottom: 10px; /* Space between list items */
+}
+
+/* Top level list items with primary color */
+ol li::before {
+    content: counter(item) ". ";
+    color: var(--primary-color);
+    margin-right: 5px;
+}
+
+/* Second level list items with default text color */
+ol ol li::before {
+    content: counters(item, ".") " ";
+    color: inherit; /* Default text color */
+}
+
+/* Third level list items with primary color again */
+ol ol ol li::before {
+    content: counters(item, ".") " ";
+    color: var(--primary-color);
+}
+
+/* Additional styling for list items as needed */
+ol li, ol ol li, ol ol ol li {
+    position: relative;
+    padding-left: 20px; /* Space for the number */
+}
+
