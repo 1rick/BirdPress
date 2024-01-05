@@ -1,7 +1,7 @@
 {
     "site_name": "Birdpress: A Simple Website and Blog Made Simply in Python",
     "site_description": "Because who needs wordpress for small websites like this.",
-    "theme_stylesheet": "RedCrane.css",
+    "theme_stylesheet": "KingfisherBlue.css",
     "base_url": "http://localhost:8000",
     "logo_filename": "logo.svg",
     "favicon_32x32_filename": "favicon.png",

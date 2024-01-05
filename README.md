@@ -4,14 +4,13 @@
 
 - do a fallback font to google font api, for china at least. 
 - photo gallery?
-- heading colors?
 - fix line height in h1 headers  (this may or may not be anything, I can't recall)
 - fix logo icon / image options
 
 
 ## Introduction
 
-Birdpress, like many static site generators, is a simpler alternative to some popular Content Management Systems that may or may not rhyme with Birdpress. You don't need any javascript frameworks to run it, nor does the generated site use any javascript. It's proudly just HTML and CSS. Once you've adjusted the CONFIG.json parameters to your liking (site colors, logo, title, etc), and entered your content in the input directory, the make_site.py processes Markdown files, and generates static HTML pages using Jinja2 templates. 
+Birdpress, like many static site generators, is a simpler alternative to some popular Content Management Systems that may or may not rhyme with Birdpress. You don't need any javascript frameworks to run it, nor does the generated site use any javascript. It's proudly just HTML and CSS. Once you've adjusted the CONFIG.json parameters to your liking (logo, title, etc), and entered your content in the input directory, the make_site.py processes Markdown files, and generates static HTML pages using Jinja2 templates. 
 
 Detailed instructions are below, but if you don't want to read, you need a few steps to fire up birdpress:
 
@@ -78,6 +77,16 @@ To set up Birdpress, follow these steps:
 3. Install the required Python packages: "pip install -r requirements.txt". Use a [virtual environment](https://www.youtube.com/watch?v=IAvAlS0CuxI) if you wish. 
 
 TKTK write more later
+
+## Themes
+
+Currently there are a few theme options available that you can declare using the theme_stylesheet option in the CONFIG.json file. 
+
+* KingfisherBlue.css (blue mene on white background)
+* RedCrane.css (red on white)
+* SnowyEgret.css (white on white)
+* TealDuck.css (green/yellow on black)
+* BlackSwan.css (dark black with greys)
 
 ## What do I need to do?
 
