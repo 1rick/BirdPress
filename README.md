@@ -256,6 +256,19 @@ Contributions to Birdpress are welcome. Please feel free to submit pull requests
 
 * [Please expose your RSS](https://rknight.me/blog/please-expose-your-rss/)
 
+**Hosting Suggestions**
+
+There are lots of places that you can host your HTML once it has been output. I'll list a few below, though of course your preference will largely depend on your experience. I've not tested most of these, but they seem ok:
+
+* Github Pages
+* Netlify
+* Surge.sh
+* NearlyFreeSpeech.net
+* 000webhost.com
+* infinityfree.com
+* 97cents.net
+* [Fastmail](https://www.fastmail.help/hc/en-us/articles/1500000280141)
+
 **Logos**:
 
 tktk
