@@ -6,8 +6,9 @@
     --page-background: #F8F9FA; /* Soft White */
     --hero-title-color: #FFFFFF; /* Pure White */
     --code-background: #1B262C; /* Dark blue for code blocks */
+    --menu-text-color: #0F4C75;
     --text-color: #1B262C; /* Dark text color for readability */
-    --font-family: '{{ config['font_family'] }}';
+    --font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
 * {
@@ -78,20 +79,21 @@ nav ul {
     color: var(--text-color); /* Ensuring readable nav text */
 }
 
-nav li {
-    margin-bottom: 1.2rem;
-    margin-left: 1.2rem;
-}
 
-nav a {
-    color: var(--text-color);
+nav ul li a {
+    color: var(--menu-text-color); /* Use the new variable */
     text-decoration: none;
     font-size: 1.2rem;
+    text-shadow: 2px 2px 4px rgba(31, 31, 31, 0.658);
     text-transform: uppercase;
 }
 
-nav a:hover {
+nav ul li a:hover {
     color: var(--secondary-color);
+}
+
+nav ul li a:visited {
+    color: var(--menu-text-color); 
 }
 
 .toggler:checked ~ nav ul {

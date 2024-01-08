@@ -5,8 +5,6 @@
     "base_url": "http://localhost:8000",
     "logo_filename": "logo.svg",
     "favicon_32x32_filename": "favicon.png",
-    "font_url": "https://fonts.googleapis.com/css?family=Roboto:300,400,500",
-    "font_family": "'Roboto', sans-serif",
     "navigation": [
         {
             "label": "About",
