@@ -14,6 +14,7 @@ read_posts_script = 'read_posts.py'
 read_categories_script = 'read_categories.py'
 render_categories_script = 'render_categories.py'
 read_tags_script = 'read_tags.py'
+read_series_script = 'read_series.py'
 render_tags_script = 'render_tags.py'
 render_posts_script = 'render_posts.py'
 render_rss_script = 'render_rss.py'
@@ -27,6 +28,7 @@ tags_dir = 'output/tags'
 pages_dir = 'input/pages'
 output_pages_dir = 'output'
 template_dir = 'templates'
+series_data_file = 'series_data.json'  # Path to series_data.json
 
 # Initialize Jinja Environment
 env = Environment(loader=FileSystemLoader(template_dir))
@@ -53,8 +55,9 @@ def main():
     run_script(read_categories_script, input_posts_dir)
     run_script(render_categories_script, 'categories_data.json', categories_dir, template_dir)
     run_script(read_tags_script, input_posts_dir)
+    run_script(read_series_script, input_posts_dir)
     run_script(render_tags_script, 'tags_data.json', tags_dir, template_dir)
-    run_script(render_posts_script, 'posts_data.json', output_posts_dir, template_dir)
+    run_script(render_posts_script, 'posts_data.json', output_posts_dir, template_dir, series_data_file)
     run_script(render_rss_script, 'posts_data.json', output_pages_dir, template_dir)
     run_script(process_pages_script, pages_dir, output_pages_dir, template_dir)
 
