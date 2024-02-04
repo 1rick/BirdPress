@@ -18,7 +18,10 @@
         </div>
         <div>{{ content | safe }}</div>
         <div class="post-info">
-            {{ info_line | safe }}
+            <p>{{ info_line | safe }}</p>
+            {% if series_line %}
+            <p class="series-info">{{ series_line | safe }}</p>
+            {% endif %}
         </div>
         <!-- Additional post-specific content -->
     </div>

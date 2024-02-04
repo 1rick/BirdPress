@@ -2,8 +2,9 @@
 
 title: HTML Elements Examples
 categories: ["Side Projects"]
-tags: ["Web Development"]
+tags: ["Web Development", "Birdpress Instructions"]
 writtenby: "RM"
+series_tag: ["Birdpress Instructions"]
 
 ---
 
